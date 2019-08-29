@@ -4,7 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const inState = {
+    "jobTitle" : "",
+    "employmentPeriodPermanent": null,
+    "currentlyEmployed": false,
+    "startDate": null,
+    "endDate": null,
+    "employer": "",
+    "phoneNumber": null,
+    "email": ""
+};
+
+ReactDOM.render(<App initialState={inState}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
