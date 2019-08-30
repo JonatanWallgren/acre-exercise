@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 const inState = {
     "jobTitle" : "",
-    "employmentPeriodPermanent": null,
+    "employmentPeriodPermanent": false,
     "currentlyEmployed": false,
     "startDate": null,
     "endDate": null,
